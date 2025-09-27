@@ -15,8 +15,8 @@ Este projeto consiste em ajudar em uma área de varejo dos Estados Unidos (EUA) 
 • 📊 Numpy
 
 # ❓Exemplos de Perguntas
-• Maior valor de venda pela categoria "OFFICE SUPPLIES" ?
+• Maior valor de venda pela categoria "OFFICE SUPPLIES"?
 
-• Qual o total de vendas por data do pedido e a maior venda em um único dia ?
+• Qual o total de vendas por data do pedido e a maior venda em um único dia?
 
-• Qual é o total de vendas por estado ?
+• Qual é o total de vendas por estado?
