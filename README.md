@@ -1,4 +1,4 @@
-# 🐶 Análise de Raças de Cães com SQL
+# 🏭 Análise de vendas para uma área de varejo
 Este projeto consiste na modelagem, organização e análise de uma base de dados contendo informações sobre raças de cães. Ele abrange a criação de tabelas normalizadas, preenchimento com dados brutos e extração de insights por meio de queries SQL. Foi desenvolvido com fins de aprendizado e portfólio.
 
 📁 Estrutura do Projeto
