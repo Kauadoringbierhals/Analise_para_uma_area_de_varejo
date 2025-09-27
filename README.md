@@ -4,3 +4,5 @@ Este projeto consiste em ajudar em uma área de varejo dos Estados Unidos (EUA) 
 • data/csv - Onde está toda a tabela com esses dados
 
 • projeto_análise_projeto.py - Todo o código do projeto
+
+• insights - Análises e descobertas com Python
