@@ -1,1 +1,1 @@
-## 🏭 Análise de vendas para uma área de varejo
+🏭 Análise de vendas para uma área de varejo
