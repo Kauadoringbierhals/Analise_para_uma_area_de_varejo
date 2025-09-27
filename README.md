@@ -12,4 +12,4 @@ Este projeto consiste em ajudar em uma área de varejo dos Estados Unidos (EUA) 
 
 • 🐼 Panda
 
-📊 Numpy
+• 📊 Numpy
