@@ -13,7 +13,6 @@ print(f"Cidade com maior valor de venda para Office Supplies: {cidade_maior_vend
 ### ❓Pergunta 2: Qual o total de vendas por data do pedido e a maior venda em um único dia?
 **Consulta SQL utilizada:**
 ```python
-print("Total de vendas por data do pedido e a maior venda em um único dia:")
 df_dsa_p2 = df_dsa.groupby("Data_Pedido")["Valor_Venda"].sum()
 print(df_dsa_p2)
 print ("-=-" * 55)
