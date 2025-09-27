@@ -3,4 +3,4 @@ Este projeto consiste em ajudar em uma área de varejo dos Estados Unidos (EUA) 
 # 📁 Estrutura do Projeto
 • data/csv - Onde está toda a tabela com esses dados
 
-• projeto_análise_projeto_py - Todo o código do projeto
+• projeto_análise_projeto.py - Todo o código do projeto
