@@ -2,10 +2,10 @@
 Este projeto consiste na modelagem, organização e análise de uma base de dados contendo informações sobre raças de cães. Ele abrange a criação de tabelas normalizadas, preenchimento com dados brutos e extração de insights por meio de queries SQL. Foi desenvolvido com fins de aprendizado e portfólio.
 
 📁 Estrutura do Projeto
-Criação de Tabelas/ – Scripts SQL para criar tabelas principais e intermediárias
+Criação do código com o nome de projeto
 Preenchimento de Tabelas/ – Scripts Python e SQL para inserir os dados no banco
 Insights/ – Análises e descobertas baseadas nas queries SQL
-Arquivos/ – Resultados das consultas em formato .csv, notebook de apoio e scripts para conexão com o banco de dados e exportação dos dados
+# Arquivos/ – Resultados das consultas em formato .csv, notebook de apoio e scripts para conexão com o banco de dados e exportação dos dados
 Schema_CTest.ipynb – Verificação da estrutura das tabelas no MySQL
 to_csv.ipynb – Script para exportar os resultados das queries como .csv
 Resultados_DataFrames.ipynb – Visualização dos resultados das queries diretamente como DataFrames
