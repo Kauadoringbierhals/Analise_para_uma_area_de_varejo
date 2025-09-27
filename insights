@@ -1,2 +1,9 @@
 ❓Pergunta 1: Maior valor de venda pela categoria "OFFICE SUPPLIES"?
 Código Python utilizado:
+df_dsa_p1 = df_dsa[df_dsa["Categoria"] == "Office Supplies"]
+print(df_dsa_p1)
+df_dsa_p1_total = df_dsa_p1.groupby("Cidade")["Valor_Venda"].sum()
+print ("-=-" * 55)
+print(df_dsa_p1_total.head())
+cidade_maior_venda = df_dsa_p1_total.idxmax()
+print(f"Cidade com maior valor de venda para Office Supplies: {cidade_maior_venda}")
