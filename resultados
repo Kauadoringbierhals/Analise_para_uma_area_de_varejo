@@ -1,0 +1,271 @@
+ID_Pedido Data_Pedido ID_Cliente     Segmento           Pais           Cidade      Estado       ID_Produto        Categoria SubCategoria  Valor_Venda
+0     CA-2017-152156  08/11/2017   CG-12520     Consumer  United States        Henderson    Kentucky  FUR-BO-10001798        Furniture    Bookcases     261.9600
+1     CA-2017-152156  08/11/2017   CG-12520     Consumer  United States        Henderson    Kentucky  FUR-CH-10000454        Furniture       Chairs     731.9400
+2     CA-2017-138688  12/06/2017   DV-13045    Corporate  United States      Los Angeles  California  OFF-LA-10000240  Office Supplies       Labels      14.6200
+3     US-2016-108966  11/10/2016   SO-20335     Consumer  United States  Fort Lauderdale     Florida  FUR-TA-10000577        Furniture       Tables     957.5775
+4     US-2016-108966  11/10/2016   SO-20335     Consumer  United States  Fort Lauderdale     Florida  OFF-ST-10000760  Office Supplies      Storage      22.3680
+...              ...         ...        ...          ...            ...              ...         ...              ...              ...          ...          ...
+9695  CA-2018-154116  15/12/2018   KM-16660     Consumer  United States        Inglewood  California  OFF-PA-10004569  Office Supplies        Paper      22.8300
+9696  CA-2018-154116  15/12/2018   KM-16660     Consumer  United States        Inglewood  California  OFF-AP-10000027  Office Supplies   Appliances      54.3200
+9697  CA-2018-154116  15/12/2018   KM-16660     Consumer  United States        Inglewood  California  TEC-PH-10000675       Technology       Phones     196.7760
+9698  CA-2017-105291  30/10/2017   SP-20920     Consumer  United States  San Luis Obispo  California  OFF-FA-10003059  Office Supplies    Fasteners       3.6200
+9699  CA-2018-147032  31/07/2018   LB-16795  Home Office  United States       Wilmington    Delaware  OFF-PA-10003256  Office Supplies        Paper      11.5400
+
+[9700 rows x 11 columns]
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+Colunas do DataSet:
+Index(['ID_Pedido', 'Data_Pedido', 'ID_Cliente', 'Segmento', 'Pais', 'Cidade',
+       'Estado', 'ID_Produto', 'Categoria', 'SubCategoria', 'Valor_Venda'],
+      dtype='object')
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+Verificando o tipo de cada coluna:
+ID_Pedido        object
+Data_Pedido      object
+ID_Cliente       object
+Segmento         object
+Pais             object
+Cidade           object
+Estado           object
+ID_Produto       object
+Categoria        object
+SubCategoria     object
+Valor_Venda     float64
+dtype: object
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+Resumo estatístico da coluna com o valor de venda:
+<bound method NDFrame.describe of 0       261.9600
+1       731.9400
+2        14.6200
+3       957.5775
+4        22.3680
+          ...
+9695     22.8300
+9696     54.3200
+9697    196.7760
+9698      3.6200
+9699     11.5400
+Name: Valor_Venda, Length: 9700, dtype: float64>
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+Verificando se há valores duplicados:
+0       False
+1       False
+2       False
+3       False
+4       False
+        ...
+9695    False
+9696    False
+9697    False
+9698    False
+9699    False
+Length: 9700, dtype: bool
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+Verificando se há valores ausentes:
+<bound method DataFrame.sum of       ID_Pedido  Data_Pedido  ID_Cliente  Segmento   Pais  Cidade  Estado  ID_Produto  Categoria  SubCategoria  Valor_Venda
+0         False        False       False     False  False   False   False       False      False         False        False
+1         False        False       False     False  False   False   False       False      False         False        False
+2         False        False       False     False  False   False   False       False      False         False        False
+3         False        False       False     False  False   False   False       False      False         False        False
+4         False        False       False     False  False   False   False       False      False         False        False
+...         ...          ...         ...       ...    ...     ...     ...         ...        ...           ...          ...
+9695      False        False       False     False  False   False   False       False      False         False        False
+9696      False        False       False     False  False   False   False       False      False         False        False
+9697      False        False       False     False  False   False   False       False      False         False        False
+9698      False        False       False     False  False   False   False       False      False         False        False
+9699      False        False       False     False  False   False   False       False      False         False        False
+
+[9700 rows x 11 columns]>
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+Maior valor de venda em uma cidade pela categoria OFFICE SUPPLIES:
+           ID_Pedido Data_Pedido ID_Cliente     Segmento           Pais           Cidade      Estado       ID_Produto        Categoria SubCategoria  Valor_Venda
+2     CA-2017-138688  12/06/2017   DV-13045    Corporate  United States      Los Angeles  California  OFF-LA-10000240  Office Supplies       Labels       14.620
+4     US-2016-108966  11/10/2016   SO-20335     Consumer  United States  Fort Lauderdale     Florida  OFF-ST-10000760  Office Supplies      Storage       22.368
+6     CA-2015-115812  09/06/2015   BH-11710     Consumer  United States      Los Angeles  California  OFF-AR-10002833  Office Supplies          Art        7.280
+8     CA-2015-115812  09/06/2015   BH-11710     Consumer  United States      Los Angeles  California  OFF-BI-10003910  Office Supplies      Binders       18.504
+9     CA-2015-115812  09/06/2015   BH-11710     Consumer  United States      Los Angeles  California  OFF-AP-10002892  Office Supplies   Appliances      114.900
+...              ...         ...        ...          ...            ...              ...         ...              ...              ...          ...          ...
+9693  CA-2015-144281  10/06/2015   HK-14890    Corporate  United States          Detroit    Michigan  OFF-LA-10003930  Office Supplies       Labels      491.550
+9695  CA-2018-154116  15/12/2018   KM-16660     Consumer  United States        Inglewood  California  OFF-PA-10004569  Office Supplies        Paper       22.830
+9696  CA-2018-154116  15/12/2018   KM-16660     Consumer  United States        Inglewood  California  OFF-AP-10000027  Office Supplies   Appliances       54.320
+9698  CA-2017-105291  30/10/2017   SP-20920     Consumer  United States  San Luis Obispo  California  OFF-FA-10003059  Office Supplies    Fasteners        3.620
+9699  CA-2018-147032  31/07/2018   LB-16795  Home Office  United States       Wilmington    Delaware  OFF-PA-10003256  Office Supplies        Paper       11.540
+
+[5851 rows x 11 columns]
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+Cidade
+Aberdeen         25.500
+Abilene           1.392
+Akron          1107.646
+Albuquerque     943.122
+Alexandria     4879.790
+Name: Valor_Venda, dtype: float64
+Cidade com maior valor de venda para Office Supplies: New York City
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+Total de vendas por data do pedido e a maior venda em um único dia:
+Data_Pedido
+01/01/2018    1481.8280
+01/02/2015     468.9000
+01/02/2017     161.9700
+01/03/2015    2203.1510
+01/03/2016    1642.1744
+                ...
+31/10/2017    2346.5790
+31/10/2018     523.9280
+31/12/2015    5253.2700
+31/12/2016    1381.3440
+31/12/2017     731.7680
+Name: Valor_Venda, Length: 1226, dtype: float64
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+A data que obteve o maior valor de venda foi: 18/03/2015
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+O total de vendas por estado é:                   Estado  Valor_Venda
+0                Alabama   19510.6400
+1                Arizona   35272.6570
+2               Arkansas   11673.8300
+3             California  442927.0975
+4               Colorado   31841.5980
+5            Connecticut   13366.7370
+6               Delaware   26452.5890
+7   District of Columbia    2865.0200
+8                Florida   88043.7000
+9                Georgia   48083.1600
+10                 Idaho    4292.5160
+11              Illinois   78109.9270
+12               Indiana   48718.4000
+13                  Iowa    4443.5600
+14                Kansas    2914.3100
+15              Kentucky   36409.5800
+16             Louisiana    9131.0500
+17                 Maine    1270.5300
+18              Maryland   23705.5230
+19         Massachusetts   27363.2640
+20              Michigan   76081.1740
+21             Minnesota   29863.1500
+22           Mississippi   10771.3400
+23              Missouri   22205.1500
+24               Montana    5589.3520
+25              Nebraska    7194.9500
+26                Nevada   16729.1020
+27         New Hampshire    7132.5440
+28            New Jersey   34265.7120
+29            New Mexico    4783.5220
+30              New York  304536.4010
+31        North Carolina   55165.9640
+32          North Dakota     919.9100
+33                  Ohio   74277.8020
+34              Oklahoma   19683.3900
+35                Oregon   17284.4620
+36          Pennsylvania  114411.6800
+37          Rhode Island   22525.0260
+38        South Carolina    8481.7100
+39          South Dakota    1315.5600
+40             Tennessee   30661.8730
+41                 Texas  163549.8602
+42                  Utah   11220.0560
+43               Vermont    4524.4700
+44              Virginia   68194.6700
+45            Washington  133826.0060
+46         West Virginia    1209.8240
+47             Wisconsin   31154.4700
+48               Wyoming    1603.1360
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+ As 10 cidades com maior valor de venda são:
+            Cidade  Valor_Venda
+327  New York City  251749.2190
+265    Los Angeles  171654.6330
+450        Seattle  114725.4780
+436  San Francisco  107489.9520
+372   Philadelphia  107197.8030
+207        Houston   61590.1868
+435      San Diego   47458.3790
+80         Chicago   46974.3430
+216   Jacksonville   44713.1830
+123        Detroit   42446.9440
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+Qual segmento obteve o maior total de vendas:
+      Segmento   Valor_Venda
+0     Consumer  1.133834e+06
+1    Corporate  6.792322e+05
+2  Home Office  4.224914e+05
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+O segmento que obteve o maior total de venda foi o de consumer.
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+O valor de vendas por ano foi:
+     Ano     Segmento  Valor_Venda
+0   2015     Consumer  256719.9166
+1   2015    Corporate  125819.5957
+2   2015  Home Office   88229.0878
+3   2016     Consumer  265295.2593
+4   2016    Corporate  114643.1229
+5   2016  Home Office   74134.1332
+6   2017     Consumer  288459.5572
+7   2017    Corporate  203266.7398
+8   2017  Home Office  103639.6270
+9   2018     Consumer  323359.6019
+10  2018    Corporate  235502.7284
+11  2018  Home Office  156488.5849
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+Se o valor_Venda for maior que 1000 recebe 15% de desconto, se o valo_Venda for menor que 1000 recebe 10% de desconto.
+           ID_Pedido Data_Pedido ID_Cliente     Segmento           Pais           Cidade      Estado       ID_Produto        Categoria SubCategoria  Valor_Venda   Ano  Desconto
+0     CA-2017-152156  2017-11-08   CG-12520     Consumer  United States        Henderson    Kentucky  FUR-BO-10001798        Furniture    Bookcases     261.9600  2017       0.1  
+1     CA-2017-152156  2017-11-08   CG-12520     Consumer  United States        Henderson    Kentucky  FUR-CH-10000454        Furniture       Chairs     731.9400  2017       0.1  
+2     CA-2017-138688  2017-06-12   DV-13045    Corporate  United States      Los Angeles  California  OFF-LA-10000240  Office Supplies       Labels      14.6200  2017       0.1  
+3     US-2016-108966  2016-10-11   SO-20335     Consumer  United States  Fort Lauderdale     Florida  FUR-TA-10000577        Furniture       Tables     957.5775  2016       0.1  
+4     US-2016-108966  2016-10-11   SO-20335     Consumer  United States  Fort Lauderdale     Florida  OFF-ST-10000760  Office Supplies      Storage      22.3680  2016       0.1  
+...              ...         ...        ...          ...            ...              ...         ...              ...              ...          ...          ...   ...       ...  
+9695  CA-2018-154116  2018-12-15   KM-16660     Consumer  United States        Inglewood  California  OFF-PA-10004569  Office Supplies        Paper      22.8300  2018       0.1  
+9696  CA-2018-154116  2018-12-15   KM-16660     Consumer  United States        Inglewood  California  OFF-AP-10000027  Office Supplies   Appliances      54.3200  2018       0.1  
+9697  CA-2018-154116  2018-12-15   KM-16660     Consumer  United States        Inglewood  California  TEC-PH-10000675       Technology       Phones     196.7760  2018       0.1  
+9698  CA-2017-105291  2017-10-30   SP-20920     Consumer  United States  San Luis Obispo  California  OFF-FA-10003059  Office Supplies    Fasteners       3.6200  2017       0.1  
+9699  CA-2018-147032  2018-07-31   LB-16795  Home Office  United States       Wilmington    Delaware  OFF-PA-10003256  Office Supplies        Paper      11.5400  2018       0.1  
+
+[9700 rows x 13 columns]
+Ao total, quantos foram de 15% e 10%:
+Desconto
+0.10    9243
+0.15     457
+Name: count, dtype: int64
+No total 457 vendas receberiam desconto de 15%
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+Caso decidam conceder desconto de 15%, qual seria o valor antes e depois desse desconto.
+           ID_Pedido Data_Pedido ID_Cliente     Segmento           Pais           Cidade  ...        Categoria SubCategoria Valor_Venda   Ano  Desconto  Valor_Venda_Desconto
+0     CA-2017-152156  2017-11-08   CG-12520     Consumer  United States        Henderson  ...        Furniture    Bookcases    261.9600  2017       0.1             235.76400     
+1     CA-2017-152156  2017-11-08   CG-12520     Consumer  United States        Henderson  ...        Furniture       Chairs    731.9400  2017       0.1             658.74600     
+2     CA-2017-138688  2017-06-12   DV-13045    Corporate  United States      Los Angeles  ...  Office Supplies       Labels     14.6200  2017       0.1              13.15800     
+3     US-2016-108966  2016-10-11   SO-20335     Consumer  United States  Fort Lauderdale  ...        Furniture       Tables    957.5775  2016       0.1             861.81975     
+4     US-2016-108966  2016-10-11   SO-20335     Consumer  United States  Fort Lauderdale  ...  Office Supplies      Storage     22.3680  2016       0.1              20.13120     
+...              ...         ...        ...          ...            ...              ...  ...              ...          ...         ...   ...       ...                   ...     
+9695  CA-2018-154116  2018-12-15   KM-16660     Consumer  United States        Inglewood  ...  Office Supplies        Paper     22.8300  2018       0.1              20.54700     
+9696  CA-2018-154116  2018-12-15   KM-16660     Consumer  United States        Inglewood  ...  Office Supplies   Appliances     54.3200  2018       0.1              48.88800     
+9697  CA-2018-154116  2018-12-15   KM-16660     Consumer  United States        Inglewood  ...       Technology       Phones    196.7760  2018       0.1             177.09840     
+9698  CA-2017-105291  2017-10-30   SP-20920     Consumer  United States  San Luis Obispo  ...  Office Supplies    Fasteners      3.6200  2017       0.1               3.25800     
+9699  CA-2018-147032  2018-07-31   LB-16795  Home Office  United States       Wilmington  ...  Office Supplies        Paper     11.5400  2018       0.1              10.38600     
+
+[9700 rows x 14 columns]
+Média de vendas antes e depois dos descontos:
+Média das vendas antes do desconto de 15%: 2116.81
+Média das vendas depois do desconto de 15%: 1799.29
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
+Total de vendas por categoria e SubCategoria, considerando somente as Top 12 SubCategorias:
+          Categoria SubCategoria  Valor_Venda
+0         Furniture       Chairs       317919
+1         Furniture       Tables       202083
+2         Furniture    Bookcases       108045
+3         Furniture  Furnishings        88862
+4   Office Supplies      Storage       216188
+5   Office Supplies      Binders       194723
+6   Office Supplies   Appliances       104061
+7   Office Supplies        Paper        76312
+8        Technology       Phones       325271
+9        Technology     Machines       189238
+10       Technology  Accessories       162791
+11       Technology      Copiers       146248
+-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-
